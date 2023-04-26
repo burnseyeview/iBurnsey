@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalized Homepage</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="tiles-container"></div>
+    <form id="add-url-form">
+        <input type="text" id="url-title" placeholder="Tile Title">
+        <input type="url" id="url-address" placeholder="Tile URL">
+        <button type="submit">Add Tile</button>
+    </form>
+    <button id="export-tiles">Export Tiles</button>
+    <button id="import-tiles">Import Tiles</button>
+    <button id="delete-selected-tiles">Delete Selected Tiles</button>
+
+    <input type="file" id="import-file" accept=".json" style="display:none">
+    <button id="toggle-theme">Toggle Dark Mode</button>
+
+    <script src="script.js"></script>
+</body>
+</html>

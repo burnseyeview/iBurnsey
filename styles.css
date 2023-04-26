@@ -1,0 +1,55 @@
+:root {
+    --background-color: #f5f5f5;
+    --tile-background-color: white;
+    --tile-border-color: #ccc;
+    --text-color: #333;
+}
+
+[data-theme="dark"] {
+    --background-color: #333;
+    --tile-background-color: #444;
+    --tile-border-color: #555;
+    --text-color: #f5f5f5;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    padding: 20px;
+}
+
+#tiles-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tile {
+    background-color: var(--tile-background-color);
+    border: 1px solid var(--tile-border-color);
+    border-radius: 3px;
+    padding: 10px;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+.tile a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+#add-url-form {
+    margin-top: 20px;
+}
+
+#url-title,
+#url-address {
+    width: 100%;
+    margin-bottom: 10px;
+}
